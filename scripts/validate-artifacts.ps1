@@ -88,6 +88,7 @@ if ($virtualMachine.properties.hardwareProfile.vmSize -eq "Standard_B2ats_v2") {
     throw "Virtual Machine size is not set to B1s. Please re-deploy VM with size set to B1s and try again."
 }
 
+
 if ($virtualMachine.properties.osProfile.linuxConfiguration.disablePasswordAuthentication -eq $true) { 
     Write-Output "`u{2705} Checked Virtual Machine OS user authentification settings - OK"
 } else { 
